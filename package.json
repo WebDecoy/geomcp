@@ -1,0 +1,70 @@
+{
+  "name": "@webdecoy/geomcp",
+  "version": "0.1.0",
+  "description": "Evidence-first GEO and technical SEO audits for AI coding assistants. Inspect pages, crawler policies, sitemaps, and before/after improvements over MCP.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "bin": {
+    "geomcp": "dist/cli.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "assets",
+    "docs",
+    "examples",
+    "README.md",
+    "LICENSE",
+    "CONTRIBUTING.md",
+    "SECURITY.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "node --import tsx src/cli.ts",
+    "test": "node --import tsx --test test/*.test.ts",
+    "check": "tsc --noEmit",
+    "artwork": "node scripts/artwork.mjs",
+    "prepack": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebDecoy/geomcp.git"
+  },
+  "homepage": "https://github.com/WebDecoy/geomcp#readme",
+  "bugs": {
+    "url": "https://github.com/WebDecoy/geomcp/issues"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "geo",
+    "generative-engine-optimization",
+    "seo",
+    "ai-search",
+    "structured-data",
+    "robots-txt",
+    "webdecoy"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "cheerio": "^1.0.0",
+    "fast-xml-parser": "^5.0.0",
+    "ipaddr.js": "^2.2.0",
+    "robots-parser": "^3.0.1",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "sharp": "^0.35.5",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}
