@@ -4,9 +4,9 @@
 
 <p align="center">
   <a href="https://github.com/WebDecoy/geomcp/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/WebDecoy/geomcp/actions/workflows/ci.yml/badge.svg" /></a>
-  <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-d8ff55?labelColor=101311&color=d8ff55" /></a>
-  <img alt="Node.js 22 or newer" src="https://img.shields.io/badge/Node.js-22%2B-d8ff55?labelColor=101311" />
-  <a href="https://modelcontextprotocol.io/"><img alt="Model Context Protocol" src="https://img.shields.io/badge/MCP-stdio-d8ff55?labelColor=101311" /></a>
+  <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-ff2a6d?labelColor=090b0e&color=ff2a6d" /></a>
+  <img alt="Node.js 22 or newer" src="https://img.shields.io/badge/Node.js-22%2B-ff2a6d?labelColor=090b0e" />
+  <a href="https://modelcontextprotocol.io/"><img alt="Model Context Protocol" src="https://img.shields.io/badge/MCP-stdio-ff2a6d?labelColor=090b0e" /></a>
 </p>
 
 <h1 align="center">Your next SEO fix starts in the conversation.</h1>
