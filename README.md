@@ -177,6 +177,8 @@ npm run artwork
 
 Tests cover audit behavior, scoring, crawler rules, XML parsing, SSRF protections and a real MCP client/server stdio exchange. GitHub Actions runs the build and tests on Node.js 22 and 24. Artwork is generated from the editable SVG designs in `scripts/artwork.mjs`.
 
+A [live validation of all 193 WebDecoy sitemap pages](docs/validation/webdecoy-2026-10-17.json) exercised all five tools through a real SDK client and stdio server. It also checked a controlled missing-title/missing-H1 fixture, blocked a metadata IP, and verified the methodology resource and prompt. Reproduce the initial 12-page validation with `npm run validate:site -- /tmp/geomcp-validation`. The recorded scores describe checklist results, not search visibility.
+
 See [CONTRIBUTING.md](CONTRIBUTING.md) for adding checks and [SECURITY.md](SECURITY.md) for private vulnerability reports.
 
 ## Built by WebDecoy

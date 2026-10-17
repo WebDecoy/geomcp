@@ -50,3 +50,9 @@ test('comparison separates regressions from coverage changes', () => {
   assert.equal(diff.regressed.length, 1); assert.equal(diff.coverageChanges.length, 1); assert.equal(diff.improved.length, 0);
   assert.throws(() => compareAudits({ ...before, checks: [before.checks[0]!, before.checks[0]!] }, after), /Duplicate/);
 });
+test('unknown results that stay unknown do not become coverage changes', () => {
+  const report = { rulesVersion: '0.1.0' as const, url, checks: [{ id: 'http-success', status: 'unknown' as const }] };
+  const diff = compareAudits(report, report);
+  assert.deepEqual(diff.coverageChanges, []);
+  assert.equal(diff.unchangedUnknown, 1);
+});

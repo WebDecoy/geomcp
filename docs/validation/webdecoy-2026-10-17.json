@@ -1,0 +1,169 @@
+{
+  "runAt": "2026-10-17T16:02:42.114Z",
+  "method": "SDK Client -> stdio transport -> built dist/cli.js; public HTTP requests",
+  "pages": 193,
+  "httpStatuses": {
+    "200": 193
+  },
+  "scores": {
+    "100": 182,
+    "99": 5,
+    "98": 6
+  },
+  "checkOutcomes": {
+    "pass": 4529,
+    "unknown": 478,
+    "warn": 11
+  },
+  "toolsValidated": [
+    "audit_url",
+    "audit_html",
+    "inspect_robots",
+    "inspect_sitemap",
+    "compare_audits"
+  ],
+  "protocolValidation": {
+    "privateAddressRejected": true,
+    "methodologyReadable": true,
+    "promptAvailable": true
+  },
+  "comparisonValidation": {
+    "beforeUrl": "https://example.com/guide",
+    "afterUrl": "https://example.com/guide",
+    "differentUrls": false,
+    "improved": [
+      {
+        "id": "page-title",
+        "before": "fail",
+        "after": "pass",
+        "outcome": "improved"
+      },
+      {
+        "id": "primary-heading",
+        "before": "fail",
+        "after": "pass",
+        "outcome": "improved"
+      }
+    ],
+    "regressed": [],
+    "coverageChanges": [],
+    "unchanged": 17,
+    "unchangedUnknown": 7,
+    "limitations": [
+      "Comparison is limited to observed check statuses under the same rules version. Coverage changes are not improvements.",
+      "Different URLs may represent different page purposes; compare in context."
+    ]
+  },
+  "sitemap": {
+    "entries": 193,
+    "duplicates": 0,
+    "invalidDates": 0,
+    "invalidLocations": 0
+  },
+  "findings": [
+    {
+      "url": "https://webdecoy.com/blog/bot-detection-false-positives-testing-benchmark/",
+      "check": "form-labels",
+      "status": "warn",
+      "evidence": "14 main-content fields; 14 without an observed label.",
+      "recommendation": "Associate each form field with a visible label or a valid accessible name.",
+      "linksNeedingLabels": []
+    },
+    {
+      "url": "https://webdecoy.com/blog/honeypot-traps-forms-buttons-endpoints-practical-guide/",
+      "check": "form-labels",
+      "status": "warn",
+      "evidence": "19 main-content fields; 19 without an observed label.",
+      "recommendation": "Associate each form field with a visible label or a valid accessible name.",
+      "linksNeedingLabels": []
+    },
+    {
+      "url": "https://webdecoy.com/blog/rag-bot-problem-real-time-ai-content-fetching/",
+      "check": "form-labels",
+      "status": "warn",
+      "evidence": "16 main-content fields; 16 without an observed label.",
+      "recommendation": "Associate each form field with a visible label or a valid accessible name.",
+      "linksNeedingLabels": []
+    },
+    {
+      "url": "https://webdecoy.com/blog/ucp-breaks-bot-detection-agentic-commerce/",
+      "check": "form-labels",
+      "status": "warn",
+      "evidence": "15 main-content fields; 15 without an observed label.",
+      "recommendation": "Associate each form field with a visible label or a valid accessible name.",
+      "linksNeedingLabels": []
+    },
+    {
+      "url": "https://webdecoy.com/blog/woocommerce-bot-protection-checkout-carding-fake-orders/",
+      "check": "form-labels",
+      "status": "warn",
+      "evidence": "10 main-content fields; 10 without an observed label.",
+      "recommendation": "Associate each form field with a visible label or a valid accessible name.",
+      "linksNeedingLabels": []
+    },
+    {
+      "url": "https://webdecoy.com/contact/",
+      "check": "internal-discovery",
+      "status": "warn",
+      "evidence": "0 HTTP(S) links to this origin in main content.",
+      "recommendation": "Link to relevant supporting pages using normal <a href> elements.",
+      "linksNeedingLabels": []
+    },
+    {
+      "url": "https://webdecoy.com/features/",
+      "check": "link-labels",
+      "status": "warn",
+      "evidence": "16 links; 1 empty or generic labels.",
+      "recommendation": "Use link labels that communicate the destination or purpose.",
+      "linksNeedingLabels": [
+        {
+          "url": "https://webdecoy.com/product/ai-analytics/",
+          "label": "Learn More"
+        }
+      ]
+    },
+    {
+      "url": "https://webdecoy.com/glossary/",
+      "check": "heading-order",
+      "status": "warn",
+      "evidence": "7 headings; 1 skipped heading levels.",
+      "recommendation": "Nest headings in a logical order without jumping levels.",
+      "linksNeedingLabels": []
+    },
+    {
+      "url": "https://webdecoy.com/product/fcaptcha-demo/",
+      "check": "internal-discovery",
+      "status": "warn",
+      "evidence": "0 HTTP(S) links to this origin in main content.",
+      "recommendation": "Link to relevant supporting pages using normal <a href> elements.",
+      "linksNeedingLabels": []
+    },
+    {
+      "url": "https://webdecoy.com/state-of-bots-2026/",
+      "check": "heading-order",
+      "status": "warn",
+      "evidence": "38 headings; 1 skipped heading levels.",
+      "recommendation": "Nest headings in a logical order without jumping levels.",
+      "linksNeedingLabels": []
+    },
+    {
+      "url": "https://webdecoy.com/tools/verify-bot/",
+      "check": "internal-discovery",
+      "status": "warn",
+      "evidence": "0 HTTP(S) links to this origin in main content.",
+      "recommendation": "Link to relevant supporting pages using normal <a href> elements.",
+      "linksNeedingLabels": []
+    }
+  ],
+  "interpretation": [
+    "11 pages have low-severity warnings; no failed checks were observed.",
+    "Five form-label warnings concern disabled Markdown task-list checkboxes, not unlabeled signup forms. Consider accessible checklist markup.",
+    "No internal links in main content is an optional navigation/content opportunity, not proof of an indexing failure.",
+    "High checklist scores do not establish AI citation, ranking, link availability, source accuracy or conversion performance."
+  ],
+  "mcpImprovements": [
+    "Fixed unchanged unknown statuses incorrectly reported as coverage changes.",
+    "Included flagged link URLs and labels in page facts.",
+    "Added repeatable SDK/stdio live validation script."
+  ]
+}

@@ -32,7 +32,8 @@
     "test": "node --import tsx --test test/*.test.ts",
     "check": "tsc --noEmit",
     "artwork": "node scripts/artwork.mjs",
-    "prepack": "npm run build"
+    "prepack": "npm run build",
+    "validate:site": "npm run build && node scripts/validate-site.mjs"
   },
   "repository": {
     "type": "git",
