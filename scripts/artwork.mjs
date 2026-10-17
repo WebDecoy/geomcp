@@ -15,10 +15,10 @@ const cover = `<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="800"
 <text x="153" y="94" fill="#fff" font-size="37" font-weight="700" letter-spacing="-1">WebDecoy</text><path d="M356 68V103" stroke="#4c3440"/><text x="379" y="94" fill="${colors.pink}" font-size="30" font-weight="700" letter-spacing="1">GEOMCP</text>
 <text x="1480" y="89" text-anchor="end" fill="${colors.muted}" font-size="17" letter-spacing="3">OPEN SOURCE · MCP SERVER</text>
 <rect x="76" y="173" width="354" height="34" rx="17" fill="#26121b" stroke="#6c2940"/><text x="96" y="196" fill="${colors.pink}" font-size="14" letter-spacing="2">GEO AUDITS FOR YOUR AI ASSISTANT</text>
-<text x="69" y="333" fill="#fff" font-size="112" font-weight="800" letter-spacing="-6">GET FOUND.</text>
-<text x="69" y="444" fill="${colors.pink}" font-size="93" font-weight="800" letter-spacing="-5">SHOW YOUR</text>
-<text x="69" y="546" fill="${colors.pink}" font-size="93" font-weight="800" letter-spacing="-5">WORK.</text>
-<text x="78" y="608" fill="${colors.muted}" font-size="25">Real evidence. Clear fixes. Better discovery.</text>
+<text x="69" y="333" fill="#fff" font-size="98" font-weight="800" letter-spacing="-5">AUDIT YOUR</text>
+<text x="69" y="444" fill="${colors.pink}" font-size="93" font-weight="800" letter-spacing="-5">SITE FOR</text>
+<text x="69" y="546" fill="${colors.pink}" font-size="93" font-weight="800" letter-spacing="-5">AI SEARCH.</text>
+<text x="78" y="608" fill="${colors.muted}" font-size="24">Find technical SEO issues. Get fixes in your AI assistant.</text>
 <path d="M78 661H780" stroke="#3a2630"/><text x="78" y="704" fill="#fff" font-size="16" letter-spacing="1">5 MCP TOOLS</text><circle cx="252" cy="699" r="3" fill="${colors.pink}"/><text x="278" y="704" fill="#fff" font-size="16" letter-spacing="1">LOCAL FIRST</text><circle cx="444" cy="699" r="3" fill="${colors.pink}"/><text x="470" y="704" fill="#fff" font-size="16" letter-spacing="1">MIT LICENSED</text>
 <image href="${duck}" x="945" y="156" width="570" height="621"/>
 <g transform="translate(940 617)"><rect width="580" height="62" rx="10" fill="#101318" stroke="#61404e"/><circle cx="26" cy="31" r="5" fill="${colors.teal}"/><text x="44" y="37" fill="#fff" font-size="17" font-family="monospace">AUDIT → FIX → VERIFY</text><text x="552" y="37" text-anchor="end" fill="${colors.pink}" font-size="15" font-family="monospace">GEOMCP</text></g>

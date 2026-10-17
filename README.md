@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/cover.png" alt="GEOMCP by WebDecoy — Get found. Show your work. Evidence-first GEO audits inside your AI assistant." width="100%" />
+  <img src="assets/cover.png" alt="GEOMCP by WebDecoy — Audit your site for AI search. Evidence-first GEO audits inside your AI assistant." width="100%" />
 </p>
 
 <p align="center">
