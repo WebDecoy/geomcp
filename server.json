@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.webdecoy/geomcp",
+  "title": "GEOMCP by WebDecoy",
+  "description": "Evidence-first GEO and SEO audits for pages, robots policies, sitemaps and before/after fixes.",
+  "repository": {
+    "url": "https://github.com/WebDecoy/geomcp",
+    "source": "github"
+  },
+  "version": "0.1.1",
+  "websiteUrl": "https://webdecoy.com/geomcp/",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@webdecoy/geomcp",
+      "version": "0.1.1",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}

@@ -31,7 +31,13 @@ Every page finding includes a stable check ID, observed evidence and a concrete 
 
 ## Get started
 
-Requires **Node.js 22+**, npm and Git. This initial release is distributed through GitHub; an npm registry release is not required.
+Requires **Node.js 22+**. Run the versioned GitHub release directly:
+
+```bash
+npx --yes --package=https://github.com/WebDecoy/geomcp/releases/download/v0.1.1/webdecoy-geomcp-0.1.1.tgz geomcp
+```
+
+This downloads the built release; cloning and compiling are optional. For development, use:
 
 ```bash
 git clone https://github.com/WebDecoy/geomcp.git
@@ -156,7 +162,7 @@ A checklist score does **not** predict AI citations, rankings, factual accuracy 
 ## Network behavior & privacy
 
 - Runs locally. No telemetry, vendor API or account system. Reports are returned to the MCP client; your assistant provider's own data policies still apply.
-- Public fetches identify as `GEOMCP/0.1 (+https://github.com/WebDecoy/geomcp)`. It does not impersonate AI vendors.
+- Public fetches identify as `GEOMCP/0.1.1 (+https://github.com/WebDecoy/geomcp)`. It does not impersonate AI vendors.
 - HTTP(S) only, ports 80/443, a 15-second total fetch deadline, four redirects maximum and a 2 MiB response limit. The same size limit applies to offline HTML input.
 - Private, loopback, link-local and reserved IP ranges are blocked. DNS answers are checked and pinned to each connection; redirects are revalidated. HTTPS downgrades are blocked.
 - No cookies, authentication headers, form submissions, JavaScript execution or browser automation. Requests ask for uncompressed content; unexpectedly compressed responses are rejected.
@@ -180,6 +186,8 @@ Tests cover audit behavior, scoring, crawler rules, XML parsing, SSRF protection
 A [live validation of all 193 WebDecoy sitemap pages](docs/validation/webdecoy-2026-10-17.json) exercised all five tools through a real SDK client and stdio server. It also checked a controlled missing-title/missing-H1 fixture, blocked a metadata IP, and verified the methodology resource and prompt. Reproduce the initial 12-page validation with `npm run validate:site -- /tmp/geomcp-validation`. The recorded scores describe checklist results, not search visibility.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for adding checks and [SECURITY.md](SECURITY.md) for private vulnerability reports.
+
+Find the [installation guide, interactive demo and audit case study](https://webdecoy.com/geomcp/?utm_source=github&utm_medium=readme&utm_campaign=geomcp_launch).
 
 ## Built by WebDecoy
 

@@ -4,7 +4,7 @@ import https from 'node:https';
 import { isIP } from 'node:net';
 import ipaddr from 'ipaddr.js';
 
-export const USER_AGENT = 'GEOMCP/0.1 (+https://github.com/WebDecoy/geomcp)';
+export const USER_AGENT = 'GEOMCP/0.1.1 (+https://github.com/WebDecoy/geomcp)';
 export const MAX_BYTES = 2 * 1024 * 1024;
 export type PageResponse = { url: string; status: number; headers: IncomingHttpHeaders; body: string; bytes: number; elapsedMs: number; redirects: string[] };
 export type Lookup = (hostname: string) => Promise<Array<{ address: string; family: number }>>;

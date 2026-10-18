@@ -1,6 +1,6 @@
 {
   "name": "@webdecoy/geomcp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Evidence-first GEO and technical SEO audits for AI coding assistants. Inspect pages, crawler policies, sitemaps, and before/after improvements over MCP.",
   "type": "module",
   "license": "MIT",
@@ -24,7 +24,8 @@
     "README.md",
     "LICENSE",
     "CONTRIBUTING.md",
-    "SECURITY.md"
+    "SECURITY.md",
+    "server.json"
   ],
   "scripts": {
     "build": "tsc",
@@ -39,7 +40,7 @@
     "type": "git",
     "url": "git+https://github.com/WebDecoy/geomcp.git"
   },
-  "homepage": "https://github.com/WebDecoy/geomcp#readme",
+  "homepage": "https://webdecoy.com/geomcp/",
   "bugs": {
     "url": "https://github.com/WebDecoy/geomcp/issues"
   },
@@ -67,5 +68,9 @@
     "sharp": "^0.35.5",
     "tsx": "^4.0.0",
     "typescript": "^5.0.0"
+  },
+  "mcpName": "io.github.webdecoy/geomcp",
+  "publishConfig": {
+    "access": "public"
   }
 }
