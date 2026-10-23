@@ -21,6 +21,10 @@
 
 Every page finding includes a stable check ID, observed evidence and a concrete recommendation. Audit reports work as structured JSON, so your assistant can turn findings into code changes and compare the result.
 
+**See it before installing:** [Watch the recorded audit-to-traffic workflow](https://youtu.be/nFJYOJ2ABFU) · [Walkthrough and installation options](https://webdecoy.com/geomcp/?utm_source=github&utm_medium=readme&utm_campaign=geomcp_demo_to_install) · [Run GEOMCP](#get-started)
+
+The recording pairs a GEOMCP audit with WebDecoy’s own-site traffic dashboard. GEOMCP audits crawlability and page evidence; observing AI crawler visits and referral traffic requires a separate WebDecoy integration. A crawler visit does not establish an AI citation or a referred visitor.
+
 - **Evidence you can inspect.** Findings point to observed metadata, elements, counts and response details.
 - **Works on your machine.** No GEOMCP account, API key, telemetry or paid LLM dependency.
 - **Useful before launch.** Audit supplied HTML without making network requests.
